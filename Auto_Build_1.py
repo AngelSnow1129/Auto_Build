@@ -9,13 +9,13 @@ import requests
 import json
 import post
 
-sI=os.environ.get(secrets.sI)
-bI=os.environ.get(secrets.bI)
-bn=os.environ.get(secrets.bN)
-aT=os.environ.get(secrets.aT)
+sI=os.getenv(secrets.sI)
+bI=os.getenv(secrets.bI)
+bn=os.getenv(secrets.bN)
+aT=os.getenv(secrets.aT)
 
 
-text=os.environ.get(text)
+text=os.getenv(text)
 url=text.format(scriptID=sI)
 data={"robots": [{ "_id": "{botId}", "name": "{botName}" }]}.format(bI=bI,botName=bN)
 headers={"Authorization":"{account_token}","Content-Type":"application/json"}.format(account_token=aT)
