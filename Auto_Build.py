@@ -9,10 +9,10 @@ import requests
 import json
 import post
 
-sI=os.environ.get(secrets.sI)
-bI=os.environ.get(secrets.bI)
-bn=os.environ.get(secrets.bN)
-aT=os.environ.get(secrets.aT)
+sI=os.environ.get('sI')
+bI=os.environ.get('bI')
+bn=os.environ.get('bN')
+aT=os.environ.get('aT')
 
 
 text=os.environ.get(text)
