@@ -11,7 +11,7 @@ import post
 
 sI=os.environ.get('sI')
 bI=os.environ.get('bI')
-bn=os.environ.get('bN')
+bN=os.environ.get('bN')
 aT=os.environ.get('aT')
 text=os.environ.get('text')
 
