@@ -7,7 +7,6 @@ import re
 import sys
 import requests
 import json
-import post
 
 sI=os.environ.get('sI')
 bI=os.environ.get('bI')
