@@ -36,4 +36,4 @@ headers_str='''{{"Authorization":"{0}","Content-Type":"application/json"}}'''.fo
 headers=ast.literal_eval(headers_str)
 
 result = requests.post(url, data=json.dumps(data) , headers=headers)
-# print(result)
+print(result)
