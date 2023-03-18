@@ -1,0 +1,1 @@
+https://api.hamibot.com/v1/devscripts/{scriptID}/run
