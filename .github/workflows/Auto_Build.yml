@@ -7,8 +7,6 @@ on:
   schedule:
     #  8 个小时
     - cron: "* */8 * * *"
-  watch:
-    types: started
 
 permissions:
   contents: read
@@ -44,7 +42,8 @@ jobs:
           sI: ${{secrets.sI }} 
           bI: ${{secrets.bI }} 
           bN: ${{secrets.bN}} 
-          account_token: ${{secrets.aT}} 
-          
+          aT: ${{secrets.aT}} 
+          text: file://text.txt
+
       run: 
           python Auto_Build.py
