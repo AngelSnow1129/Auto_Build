@@ -26,6 +26,7 @@ def remove_upprintable_chars(s):
 # url=url.isprintable()
 
 # print(url)
+text="https://api.hamibot.com/v1/devscripts/\{scriptID\}/run"
 url=text.format(scriptID=sI)
 url = remove_upprintable_chars(url)
 data='''{{"robots": [{{ "_id": "{0}", "name": "{1}"}}]}}'''.format(bI,bN)
